@@ -17,7 +17,7 @@ var Parse = {
       }
     });
   },
-
+//accessing the data for reading
   readAll: function(successCB, errorCB = null) {
     $.ajax({
       url: Parse.server,
