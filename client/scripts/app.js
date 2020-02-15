@@ -16,15 +16,22 @@ var App = {
     // Fetch initial batch of messages
     App.startSpinner();
     App.fetch(App.stopSpinner);
+    //^fetch above taking a callback stop spinner
+
   },
+  //
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
       // examine the response from the server request:
 
       console.log('this is data', data);
 
-      //grabs the data for rendering
+      //calls the function into the messages view to be worked with
       MessagesView.renderMessage(data)
+
+      RoomsView.renderRoom(data.results)
+
+
       callback();
     });
   },
