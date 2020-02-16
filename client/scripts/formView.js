@@ -12,14 +12,15 @@ var FormView = {
     console.log('click!');
 
 
-    //trying to submit input messages
+    //Saving values from html into variables
     let newInput = $('#message').val()
-    console.log('THIS IS NEWINPUT', newInput)
+    let roomselect = $('#rooms select').val()
 
     //required format to use for Parse.create function to send to server
     let messageInput = {
       'username': 'Dannny',
-      'text': newInput
+      'text': newInput,
+      'roomname': roomselect
     }
 
 

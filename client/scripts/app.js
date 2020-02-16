@@ -29,7 +29,7 @@ var App = {
       //calls the function into the messages view to be worked with
       MessagesView.renderMessage(data)
 
-      RoomsView.renderRoom(data.results)
+      RoomsView.renderRoom(data.results.roomname)
 
 
       callback();
