@@ -22,11 +22,12 @@ Package Manager Bower
 Parse API
 The message objects you send to the parse server (via POST requests) should be in the following format:
 
-  let messageInput = {
-      'username': 'Dannny',
-      'text': newInput,
-      'roomname': roomselect
-    }
+var messageInput = {
+  username: 'Danny',
+  text: 'text_input',
+  roomname: 'lobby'
+};
+
 To get you started, here's an example POST request. Note that any messages you POST to the server are viewable by everyone, so be nice.
 
     $.ajax({
