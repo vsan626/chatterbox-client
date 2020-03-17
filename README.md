@@ -1,5 +1,4 @@
 # This is a project I completed as a student at hackreactor.
-# chatterbox-client
 
 chatterbox-client
 This is a project I completed as a student at hackreactor. This project was worked on with a pair.
